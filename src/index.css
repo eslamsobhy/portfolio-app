@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0f1624;
+  color: white;
 }
 
 code {
@@ -14,4 +16,10 @@ code {
 
 .App {
   text-align: center;
+}
+
+.container {
+  /* the container holds the content inside of the parent */
+  width: 90vw;
+  margin: 0 auto;
 }
