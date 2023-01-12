@@ -1,8 +1,10 @@
 import React from "react";
 import "./header.css";
 
+// links and icons
+import { links, social } from "../../data";
+
 // icons
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
 
 const Header = () => {
@@ -15,20 +17,22 @@ const Header = () => {
           </a>
         </div>
         <div className="nav-links">
-          <div className="nav-link">Projects</div>
-          <div className="nav-link">Technologies</div>
-          <div className="nav-link">About</div>
+          {links.map((link) => {
+            return (
+              <div className="nav-link" key={link.id}>
+                {link.text}
+              </div>
+            );
+          })}
         </div>
         <div className="nav-icons">
-          <div className="nav-icon">
-            <AiFillGithub size="2rem" />
-          </div>
-          <div className="nav-icon">
-            <AiFillLinkedin size="2rem" />
-          </div>
-          <div className="nav-icon">
-            <AiFillInstagram size="2rem" />
-          </div>
+          {social.map((icon) => {
+            return (
+              <div className="nav-icon" key={icon.id}>
+                {icon.icon}
+              </div>
+            );
+          })}
         </div>
       </nav>
     </div>

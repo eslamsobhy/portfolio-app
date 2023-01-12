@@ -16,12 +16,16 @@ export const social = [
   {
     id: 1,
     url: "mailto:eslamsobhy206@gmail.com",
-    icon: <AiFillGoogleCircle />,
+    icon: <AiFillGoogleCircle size="1.75rem" />,
   },
   {
     id: 2,
     url: "https://www.linkedin.com/in/eslam-sobhy-800249175",
-    icon: <AiFillLinkedin />,
+    icon: <AiFillLinkedin size="1.75rem" />,
   },
-  { id: 3, url: "https://www.github.com/eslamsobhy", icon: <AiFillGithub /> },
+  {
+    id: 3,
+    url: "https://www.github.com/eslamsobhy",
+    icon: <AiFillGithub size="1.75rem" />,
+  },
 ];
