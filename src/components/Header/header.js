@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.css";
 
 // links and icons
@@ -13,7 +13,13 @@ import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   const [showLinks, setShowLinks] = useState(false);
-  console.log(showLinks);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLinks(false);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, [showLinks]);
 
   return (
     <div className="navbar">
