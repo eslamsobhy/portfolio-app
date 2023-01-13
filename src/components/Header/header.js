@@ -4,6 +4,9 @@ import "./header.css";
 // links and icons
 import { links, social } from "../../data";
 
+// components
+import { Links } from "./links";
+
 // icons
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
@@ -48,6 +51,7 @@ const Header = () => {
           })}
         </div>
       </nav>
+      {showLinks && <Links />}
     </div>
   );
 };
