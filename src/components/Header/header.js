@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 
 // links and icons
@@ -9,6 +9,9 @@ import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 
 const Header = () => {
+  const [showLinks, setShowLinks] = useState(false);
+  console.log(showLinks);
+
   return (
     <div className="navbar">
       <nav className="container section">
@@ -19,7 +22,10 @@ const Header = () => {
           >
             <DiCssdeck size="3rem" /> <span>Portfolio</span>
           </a>
-          <button className="nav-toggle">
+          <button
+            className="nav-toggle"
+            onClick={() => setShowLinks(!showLinks)}
+          >
             <FaBars />
           </button>
         </div>
