@@ -6,15 +6,22 @@ import { links, social } from "../../data";
 
 // icons
 import { DiCssdeck } from "react-icons/di";
+import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   return (
     <div className="navbar">
       <nav className="container section">
-        <div className="nav-logo">
-          <a style={{ display: "flex", alignItems: "center", color: "white" }}>
+        <div className="nav-center">
+          <a
+            style={{ display: "flex", alignItems: "center", color: "white" }}
+            className="nav-logo"
+          >
             <DiCssdeck size="3rem" /> <span>Portfolio</span>
           </a>
+          <button className="nav-toggle">
+            <FaBars />
+          </button>
         </div>
         <div className="nav-links">
           {links.map((link) => {
