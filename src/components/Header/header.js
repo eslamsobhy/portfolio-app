@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./header.css";
+import { Link } from "react-router-dom";
 
 // links and icons
 import { links, social } from "../../data";
@@ -42,7 +43,7 @@ const Header = () => {
           {links.map((link) => {
             return (
               <div className="nav-link" key={link.id}>
-                {link.text}
+                <Link to={link.url}>{link.text}</Link>
               </div>
             );
           })}

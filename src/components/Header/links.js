@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { links, social } from "../../data";
 
 export const Links = () => {
@@ -9,7 +10,7 @@ export const Links = () => {
           const { id, url, text } = link;
           return (
             <div key={id} className="link">
-              {text}
+              <Link to={url}>{text}</Link>
             </div>
           );
         })}
