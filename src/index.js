@@ -2,7 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
+
+// components and pages
 import App from "./App";
+import Home from "./components/Home/Home";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -10,7 +13,7 @@ root.render(
     <Router>
       <App />
       <Routes>
-        <Route path="/" element="" />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element="" />
         <Route path="/technologies" element="" />
         <Route path="/projects" element="" />
