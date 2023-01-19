@@ -1,3 +1,7 @@
+.home-container {
+  margin-top: 80px;
+}
+
 .hero-title {
   font-size: 60px;
   font-weight: bold;
@@ -11,7 +15,7 @@
 }
 
 .hero-btn {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255);
   /* background-color: rgba(255, 255, 255, 0.75); */
   background-image: linear-gradient(
     to right,
