@@ -1,0 +1,13 @@
+.section-title {
+  font-size: 4rem;
+}
+
+.projects-container {
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.project-img {
+  width: 100%;
+}
