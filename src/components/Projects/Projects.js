@@ -7,7 +7,7 @@ import "./projects.css";
 import { projects } from "../../constants/constants";
 
 // icons
-import { BsCodeSlash, BsGlobe } from "react-icons/bs";
+import { BsGithub, BsGlobe } from "react-icons/bs";
 
 const Projects = () => {
   return (
@@ -24,6 +24,7 @@ const Projects = () => {
                 <div className="project-title">{title}</div>
                 <hr className="project-hr" />
                 <p className="project-description">{description}</p>
+                <hr className="project-hr" />
                 <div className="stack">Stack</div>
                 <div className="stack-tags">
                   {tags.map((tag, index) => {
@@ -35,10 +36,10 @@ const Projects = () => {
                   })}
                 </div>
                 <div className="links">
-                  <a href={source}>
-                    <BsCodeSlash />
+                  <a href={source} title="code">
+                    <BsGithub />
                   </a>
-                  <a href={visit}>
+                  <a href={visit} title="live demo">
                     <BsGlobe />
                   </a>
                 </div>
