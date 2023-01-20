@@ -2,6 +2,11 @@
   font-size: 4rem;
 }
 
+.section-container-rel {
+  position: relative;
+  margin-bottom: 10rem;
+}
+
 .projects-container {
   margin: 80px auto;
   display: grid;
@@ -80,4 +85,12 @@ hr {
 .links a:link,
 .links a:visited {
   color: rgba(255, 255, 255, 0.75);
+}
+
+.section-btn {
+  position: absolute;
+  width: max-content;
+  top: 103%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

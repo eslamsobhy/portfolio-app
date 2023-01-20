@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // styles
 import "./projects.css";
@@ -12,7 +13,7 @@ import { BsGithub, BsGlobe } from "react-icons/bs";
 const Projects = () => {
   return (
     <section className="projects">
-      <div className="section-container">
+      <div className="section-container section-container-rel">
         <div className="section-title">Projects</div>
         <article className="projects-container">
           {projects.map((project) => {
@@ -47,6 +48,9 @@ const Projects = () => {
             );
           })}
         </article>
+        <button className="main-btn section-btn">
+          <Link to="/">Back To home</Link>
+        </button>
       </div>
     </section>
   );
