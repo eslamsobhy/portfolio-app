@@ -15,5 +15,6 @@
 }
 
 .home-btn {
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  margin: 40px auto;
 }
