@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./header.css";
+import "./queries.css";
 import { Link } from "react-router-dom";
 
 // links and icons
 import { links, social } from "../../data";
-
-// components
-import { Links } from "./links";
 
 // icons
 import { DiCssdeck } from "react-icons/di";
@@ -18,13 +16,17 @@ const Header = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLinks(false);
-    }, 3000);
+    }, 6000);
     return () => clearTimeout(timer);
   }, [showLinks]);
 
   return (
     <div className="navbar">
-      <nav className="container section">
+      <nav
+        className={
+          showLinks ? `container section toggled-nav` : `container section`
+        }
+      >
         <div className="nav-center">
           <a
             style={{ display: "flex", alignItems: "center", color: "white" }}
@@ -32,12 +34,6 @@ const Header = () => {
           >
             <DiCssdeck size="3rem" /> <span>Portfolio</span>
           </a>
-          <button
-            className="nav-toggle"
-            onClick={() => setShowLinks(!showLinks)}
-          >
-            <FaBars />
-          </button>
         </div>
         <div className="nav-links">
           {links.map((link) => {
@@ -57,8 +53,11 @@ const Header = () => {
             );
           })}
         </div>
+        <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
+          <FaBars />
+        </button>
       </nav>
-      {showLinks && <Links />}
+      {/* {showLinks && <Links />} */}
     </div>
   );
 };

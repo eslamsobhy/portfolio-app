@@ -1,0 +1,16 @@
+@media (min-width: 801px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-links,
+  .nav-icons {
+    display: none;
+  }
+
+  .section {
+    justify-content: space-between;
+  }
+}
