@@ -13,12 +13,14 @@ import { FaBars } from "react-icons/fa";
 const Header = () => {
   const [showLinks, setShowLinks] = useState(false);
 
+  const hideNavIcon = () => {
+    setShowLinks(false);
+  };
+
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowLinks(false);
-    }, 6000);
-    return () => clearTimeout(timer);
-  }, [showLinks]);
+    window.addEventListener("resize", hideNavIcon);
+    return () => window.removeEventListener("resize", hideNavIcon);
+  }, [window.innerWidth]);
 
   return (
     <div className="navbar">
