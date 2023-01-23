@@ -26,7 +26,7 @@ const Projects = () => {
                 <hr className="project-hr" />
                 <p className="project-description">{description}</p>
                 <hr className="project-hr" />
-                <div className="stack">Stack</div>
+                <div className="stack">Tools & Technologies</div>
                 <div className="stack-tags">
                   {tags.map((tag, index) => {
                     return (
@@ -37,10 +37,10 @@ const Projects = () => {
                   })}
                 </div>
                 <div className="links">
-                  <a href={source} title="code">
+                  <a href={source} title="code" target="_blank">
                     <BsGithub />
                   </a>
-                  <a href={visit} title="live demo">
+                  <a href={visit} title="live demo" target="_blank">
                     <BsGlobe />
                   </a>
                 </div>

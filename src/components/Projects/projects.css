@@ -20,7 +20,7 @@
   flex-direction: column;
   align-items: center;
   box-shadow: 0 8px 8px -4px lightblue;
-  border-radius: 5px;
+  border-radius: 2%;
 }
 
 .project-img {
@@ -28,8 +28,9 @@
 }
 
 .project-title {
-  color: #c3fdff;
+  color: #40f9ff9c;
   font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 hr {
@@ -52,15 +53,15 @@ hr {
 
 .stack {
   letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255);
 }
 
 .stack-tags {
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 20px auto;
-  color: #c3fdff;
+  color: #40f9ff9c;
   font-weight: 500;
 }
 
