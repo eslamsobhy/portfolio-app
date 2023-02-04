@@ -38,6 +38,7 @@ code {
 }
 
 .section-title {
+  position: relative;
   color: white;
   font-size: 4rem;
   width: fit-content;
@@ -54,6 +55,17 @@ code {
   -ms-background-clip: text;
   background-clip: text;
   cursor: pointer;
+}
+
+.section-title::before {
+  content: "";
+  width: 5rem;
+  height: 0.35rem;
+  background-image: linear-gradient(to right, #ab3bec, rgb(50, 197, 255));
+  position: absolute;
+  border-radius: 1rem;
+  top: -1rem;
+  left: 0.23rem;
 }
 
 .section-title:hover {
