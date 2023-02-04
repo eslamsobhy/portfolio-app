@@ -7,6 +7,7 @@ import "./index.css";
 import App from "./App";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
+import Technologies from "./components/Technologies/Technologies";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,7 +17,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element="" />
-        <Route path="/technologies" element="" />
+        <Route path="/technologies" element={<Technologies />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/project/:id" element="" />
         <Route path="*" element="" />
