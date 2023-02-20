@@ -11,15 +11,19 @@
   margin: 50px auto 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .technology {
-  height: 130px;
+  height: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
   justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .technology > svg {
