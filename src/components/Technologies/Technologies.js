@@ -30,7 +30,9 @@ const Technologies = () => {
         <div className="section-title">Technologies</div>
         <p className="tech-text">
           I've worked with arange of technologies in the web development world.
-          From Back End to Design.
+          From Back End to Design. I’m always aiming to write code using the
+          latest best practices in software development and suitable design
+          patterns based on logic.
         </p>
       </div>
       <div className="technologies-container">
@@ -48,7 +50,7 @@ const Technologies = () => {
         </article>
         <article className="technology">
           <FaToolbox />
-          <div className="tech-heading">Frameworks & Libraries</div>
+          <div className="tech-heading">Technologies</div>
           <div className="icons-container">
             <SiReact title="React-Js" />
             <SiBootstrap />
@@ -58,7 +60,7 @@ const Technologies = () => {
         </article>
         <article className="technology">
           <FaTools />
-          <div className="tech-heading">Tools & technologies</div>
+          <div className="tech-heading">Tools</div>
           <div className="icons-container">
             <SiRedux />
             <SiMysql />
