@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Styles
 import "./technologies.css";
@@ -68,6 +69,11 @@ const Technologies = () => {
             <SiGithub title="GitHub" />
           </div>
         </article>
+      </div>
+      <div className="sec-btn">
+        <button className="main-btn">
+          <Link to="/">Back To home</Link>
+        </button>
       </div>
     </section>
   );
