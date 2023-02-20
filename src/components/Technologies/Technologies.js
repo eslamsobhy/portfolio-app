@@ -40,32 +40,32 @@ const Technologies = () => {
           <MdLanguage />
           <div className="tech-heading">Languages</div>
           <div className="icons-container">
-            <SiJavascript />
-            <SiHtml5 />
-            <SiCss3 />
-            <SiTypescript />
-            <SiCplusplus />
-            <SiPhp />
+            <SiJavascript title="Javascript" />
+            <SiHtml5 title="HTML5" />
+            <SiCss3 title="CSS3" />
+            <SiTypescript title="Typescript" />
+            <SiCplusplus title="C++" />
+            <SiPhp title="PHP" />
           </div>
         </article>
         <article className="technology">
           <FaToolbox />
           <div className="tech-heading">Technologies</div>
           <div className="icons-container">
-            <SiReact title="React-Js" />
-            <SiBootstrap />
-            <SiJquery />
-            <SiLaravel />
+            <SiReact title="ReactJs" />
+            <SiBootstrap title="Bootstrap" />
+            <SiJquery title="JQuery" />
+            <SiLaravel title="Laravel" />
           </div>
         </article>
         <article className="technology">
           <FaTools />
           <div className="tech-heading">Tools</div>
           <div className="icons-container">
-            <SiRedux />
-            <SiMysql />
-            <SiGit />
-            <SiGithub />
+            <SiRedux title="Redux Toolkit" />
+            <SiMysql title="MySQL" />
+            <SiGit title="Git" />
+            <SiGithub title="GitHub" />
           </div>
         </article>
       </div>
