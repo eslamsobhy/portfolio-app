@@ -1,5 +1,8 @@
 import React from "react";
 
+// data
+import { timelineData } from "../../constants/constants";
+
 const About = () => {
   return (
     <>
@@ -12,11 +15,15 @@ const About = () => {
             using the latest best practices in software development and suitable
             design patterns based on logic.
           </p>
-          <div className="timeline">
-            <div className="timeline-year">2017</div>
-            <div className="timeline-text">
-              Started my journey as a computer science student.
-            </div>
+          <div className="timeline-center">
+            {timelineData.map((timeline, index) => {
+              return (
+                <div className="timeline" key={index}>
+                  <div className="timeline-year">{timeline.year}</div>
+                  <div className="timeline-text">{timeline.text}</div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
