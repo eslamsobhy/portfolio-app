@@ -40,3 +40,15 @@ export const projects = [
     visit: "https://leon-app.vercel.app/",
   },
 ];
+
+export const timelineData = [
+  { year: 2017, text: "Started my journey as a computer science student." },
+  { year: 2018, text: "Took a deep dive into front-end web development." },
+  { year: 2020, text: "Took a deep dive into Back-End web development." },
+  {
+    year: 2021,
+    text: "Got a bachelor's degree in computer science from Ain Shams University.",
+  },
+  { year: 2023, text: "Became a full-stack web development trainee at ITI." },
+  { year: 2023, text: "Became a software engineer trainee at ALX Africa." },
+];
