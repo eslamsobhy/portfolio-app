@@ -3,6 +3,9 @@ import React from "react";
 // data
 import { timelineData } from "../../constants/constants";
 
+// styling
+import "./about.css";
+
 const About = () => {
   return (
     <>
@@ -15,16 +18,16 @@ const About = () => {
             using the latest best practices in software development and suitable
             design patterns based on logic.
           </p>
-          <div className="timeline-center">
-            {timelineData.map((timeline, index) => {
-              return (
-                <div className="timeline" key={index}>
-                  <div className="timeline-year">{timeline.year}</div>
-                  <div className="timeline-text">{timeline.text}</div>
-                </div>
-              );
-            })}
-          </div>
+        </div>
+        <div className="timeline-center">
+          {timelineData.map((timeline, index) => {
+            return (
+              <div className="timeline" key={index}>
+                <div className="timeline-year">{timeline.year}</div>
+                <div className="timeline-text">{timeline.text}</div>
+              </div>
+            );
+          })}
         </div>
       </section>
     </>
