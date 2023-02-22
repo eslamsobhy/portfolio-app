@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // icons
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
@@ -10,6 +10,7 @@ import { timelineData } from "../../constants/constants";
 import "./about.css";
 
 const About = () => {
+  const [index, setIndex] = useState(0);
   return (
     <>
       <section className="about">
@@ -23,9 +24,18 @@ const About = () => {
           </p>
         </div>
         <div className="timeline-center">
-          {timelineData.map((timeline, index) => {
+          {timelineData.map((timeline, timelineIndex) => {
+            // adding the classes accordingly
+            let position = "nextSlide";
+            if (timelineIndex === index) {
+              position = "activeSlide";
+            }
+            if (index === timelineIndex + 1) {
+              position = "lastSlide";
+            }
+
             return (
-              <div className="timeline" key={index}>
+              <div className={`timeline ${position}`} key={timelineIndex}>
                 <div className="timeline-year">{timeline.year}</div>
                 <div className="timeline-text">{timeline.text}</div>
               </div>

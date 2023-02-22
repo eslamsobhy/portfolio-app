@@ -15,6 +15,7 @@
   position: relative;
   width: 60vw;
   height: 150px;
+  /* overflow: hidden; */
 }
 
 .timeline {
@@ -22,6 +23,19 @@
   top: 0;
   left: 0;
   width: 100%;
+  transition: all 0.3s ease-in-out;
+  /* opacity: 0; */
+}
+
+.timeline.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+.timeline.lastSlide {
+  transform: translateX(-100%);
+}
+.timeline.nextSlide {
+  transform: translateX(100%);
 }
 
 .timeline-year {
