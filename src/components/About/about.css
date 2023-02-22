@@ -15,7 +15,7 @@
   position: relative;
   width: 60vw;
   height: 150px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .timeline {
@@ -24,7 +24,7 @@
   left: 0;
   width: 100%;
   transition: all 0.3s ease-in-out;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .timeline.activeSlide {

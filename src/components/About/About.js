@@ -30,7 +30,7 @@ const About = () => {
             if (timelineIndex === index) {
               position = "activeSlide";
             }
-            if (index === timelineIndex + 1) {
+            if (timelineIndex === index - 1) {
               position = "lastSlide";
             }
 
@@ -41,10 +41,10 @@ const About = () => {
               </div>
             );
           })}
-          <button className="prev">
+          <button className="prev" onClick={() => setIndex(index - 1)}>
             <FiChevronLeft />
           </button>
-          <button className="next">
+          <button className="next" onClick={() => setIndex(index + 1)}>
             <FiChevronRight />
           </button>
         </div>
