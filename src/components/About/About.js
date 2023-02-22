@@ -1,5 +1,8 @@
 import React from "react";
 
+// icons
+import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
+
 // data
 import { timelineData } from "../../constants/constants";
 
@@ -28,6 +31,12 @@ const About = () => {
               </div>
             );
           })}
+          <button className="prev">
+            <FiChevronLeft />
+          </button>
+          <button className="next">
+            <FiChevronRight />
+          </button>
         </div>
       </section>
     </>
