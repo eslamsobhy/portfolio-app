@@ -73,3 +73,37 @@
 .next {
   right: 0;
 }
+
+/* Queries */
+
+@media (max-width: 1000px) {
+  .timeline-text {
+    width: 80%;
+    margin: 2rem auto 0 auto;
+  }
+  .prev {
+    left: -10px;
+  }
+
+  .next {
+    right: -10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .timeline-text {
+    font-size: 90%;
+  }
+
+  .timeline-year {
+    font-size: 1.5rem;
+  }
+
+  .prev {
+    left: -1rem;
+  }
+
+  .next {
+    right: -1rem;
+  }
+}
