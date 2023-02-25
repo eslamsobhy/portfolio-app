@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 // icons
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
@@ -54,6 +55,11 @@ const About = () => {
             onClick={() => setIndex((index + 1) % timelineData.length)}
           >
             <FiChevronRight />
+          </button>
+        </div>
+        <div className="sec-btn">
+          <button className="main-btn">
+            <Link to="/">Back To home</Link>
           </button>
         </div>
       </section>
