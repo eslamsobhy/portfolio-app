@@ -2,11 +2,6 @@
   font-size: 4rem;
 }
 
-.section-container-rel {
-  position: relative;
-  margin-bottom: 10rem;
-}
-
 .projects-container {
   margin: 80px auto;
   display: grid;
