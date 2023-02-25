@@ -41,10 +41,18 @@ const About = () => {
               </div>
             );
           })}
-          <button className="prev" onClick={() => setIndex(index - 1)}>
+          <button
+            className="prev"
+            onClick={() =>
+              setIndex((index - 1 + timelineData.length) % timelineData.length)
+            }
+          >
             <FiChevronLeft />
           </button>
-          <button className="next" onClick={() => setIndex(index + 1)}>
+          <button
+            className="next"
+            onClick={() => setIndex((index + 1) % timelineData.length)}
+          >
             <FiChevronRight />
           </button>
         </div>
