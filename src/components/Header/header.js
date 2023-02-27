@@ -24,11 +24,7 @@ const Header = () => {
 
   return (
     <div className="navbar">
-      <nav
-        className={
-          showLinks ? `container section toggled-nav` : `container section`
-        }
-      >
+      <nav className="container section">
         <div className="nav-center">
           <a
             style={{ display: "flex", alignItems: "center", color: "white" }}
