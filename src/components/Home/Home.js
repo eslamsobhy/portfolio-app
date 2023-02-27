@@ -10,12 +10,15 @@ const Home = () => {
           Welcome To Sobhii's
         </div>
         <article className="hero-text">
-          "An evolving system increases it's complexity, unless work is done to
-          reduce it." - Manny Lehman.
+          "I believe that in order for you to get a great product, you have to
+          focus on the process, not the product."
         </article>
         <button className="main-btn home-btn">
-          <a href="https://www.google.com" target="_blank">
-            Download Resume
+          <a
+            href="https://drive.google.com/file/d/1BSzyaQM-i4lCbf5Ei5VXmfGdbKyKZDwW/view?usp=sharing"
+            target="_blank"
+          >
+            My Resumè
           </a>
         </button>
       </div>

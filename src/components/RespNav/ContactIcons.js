@@ -15,7 +15,9 @@ const ContactIcons = () => {
           const { id, url, icon } = item;
           return (
             <div className="icon-element" key={id}>
-              <Link to={url}>{icon}</Link>
+              <a href={url} target="_blank">
+                {icon}
+              </a>
             </div>
           );
         })}

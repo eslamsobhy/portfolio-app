@@ -20,7 +20,7 @@ export const social = [
   },
   {
     id: 2,
-    url: "https://www.linkedin.com/in/eslam-sobhy-800249175",
+    url: "https://www.linkedin.com/in/eslam-sobhii",
     icon: <AiFillLinkedin size="1.75rem" />,
   },
   {

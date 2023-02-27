@@ -28,7 +28,10 @@ const Header = ({ isResNavOpen, setIsResNavOpen }) => {
             style={{ display: "flex", alignItems: "center", color: "white" }}
             className="nav-logo"
           >
-            <DiCssdeck size="3rem" /> <span>Portfolio</span>
+            <Link>
+              <DiCssdeck size="3rem" />
+            </Link>{" "}
+            <span>Portfolio</span>
           </a>
         </div>
         <div className="nav-links">
@@ -44,7 +47,9 @@ const Header = ({ isResNavOpen, setIsResNavOpen }) => {
           {social.map((icon) => {
             return (
               <div className="nav-icon" key={icon.id}>
-                {icon.icon}
+                <a href={icon.url} target="_blank">
+                  {icon.icon}
+                </a>
               </div>
             );
           })}

@@ -18,10 +18,13 @@ const About = () => {
         <div className="section-container">
           <div className="section-title">About</div>
           <p className="about-text">
-            I've worked with arange of technologies in the web development
-            world. From Back End to Design. I’m always aiming to write code
-            using the latest best practices in software development and suitable
-            design patterns based on logic.
+            I'm Eslam Sobhy, a software engineer skilled in web development with
+            a Bachelor's degree focused on Computer Science from Ain Shams
+            University. I'm really passionate about programming; the thing that
+            made me willing to learn a new thing every single day without any
+            boredom. <br />
+            Currently I'm more focused on Front-End web development using
+            ReactJs. Here are some of the highlights of my career;
           </p>
         </div>
         <div className="timeline-center">
