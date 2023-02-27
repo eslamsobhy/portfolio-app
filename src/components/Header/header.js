@@ -11,6 +11,8 @@ import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 
 const Header = ({ isResNavOpen, setIsResNavOpen }) => {
+  const [isGlow, setIsGlow] = useState(false);
+
   const hideNavIcon = () => {
     setIsResNavOpen(false);
   };
@@ -19,6 +21,14 @@ const Header = ({ isResNavOpen, setIsResNavOpen }) => {
     window.addEventListener("resize", hideNavIcon);
     return () => window.removeEventListener("resize", hideNavIcon);
   }, [window.innerWidth]);
+
+  useEffect(() => {
+    setIsGlow(true);
+    const timeOut = setTimeout(() => {
+      setIsGlow(false);
+    }, 5000);
+    return () => clearTimeout(timeOut);
+  }, []);
 
   return (
     <div className="navbar">
@@ -58,7 +68,7 @@ const Header = ({ isResNavOpen, setIsResNavOpen }) => {
           className="nav-toggle"
           onClick={() => setIsResNavOpen(!isResNavOpen)}
         >
-          <FaBars />
+          <FaBars className={isGlow ? "glow" : ""} />
         </button>
       </nav>
       {/* {showLinks && <Links />} */}
