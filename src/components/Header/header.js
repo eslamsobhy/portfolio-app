@@ -10,11 +10,9 @@ import { links, social } from "../../data";
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 
-const Header = () => {
-  const [showLinks, setShowLinks] = useState(false);
-
+const Header = ({ isResNavOpen, setIsResNavOpen }) => {
   const hideNavIcon = () => {
-    setShowLinks(false);
+    setIsResNavOpen(false);
   };
 
   useEffect(() => {
@@ -51,7 +49,10 @@ const Header = () => {
             );
           })}
         </div>
-        <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
+        <button
+          className="nav-toggle"
+          onClick={() => setIsResNavOpen(!isResNavOpen)}
+        >
           <FaBars />
         </button>
       </nav>

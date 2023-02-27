@@ -7,7 +7,7 @@ import { links, social } from "../../data";
 // Styles
 import "./navigation.css";
 
-const Navigation = () => {
+const Navigation = ({ setIsNavOpen }) => {
   return (
     <>
       <div className="resp-nav-container">
@@ -15,7 +15,9 @@ const Navigation = () => {
           const { id, url, text } = link;
           return (
             <div className="link" key={id}>
-              <Link to={url}>{text}</Link>
+              <Link to={url} onClick={() => setIsNavOpen(false)}>
+                {text}
+              </Link>
             </div>
           );
         })}
