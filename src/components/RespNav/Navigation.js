@@ -24,8 +24,8 @@ const Navigation = ({ setIsNavOpen }) => {
             </div>
           );
         })}
-        <div className="link">
-          Contact <ContactIcons />
+        <div className="icons-container">
+          <span className="link">Contact</span> <ContactIcons />
         </div>
       </div>
     </>

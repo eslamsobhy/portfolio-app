@@ -21,3 +21,27 @@
   opacity: 1;
   padding-left: 10px;
 }
+
+.icons-container {
+  position: relative;
+}
+
+.contact-container {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  border: 1px solid #ffffff61;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.icon-element {
+  opacity: 0.75;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-element:hover {
+  opacity: 1;
+}
