@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 // contact icons component
@@ -11,6 +11,8 @@ import { links } from "../../data";
 import "./navigation.css";
 
 const Navigation = ({ setIsNavOpen }) => {
+  const [isContactOpen, setIsContactOpen] = useState(false);
+
   return (
     <>
       <div className="resp-nav-container">
@@ -25,7 +27,13 @@ const Navigation = ({ setIsNavOpen }) => {
           );
         })}
         <div className="icons-container">
-          <span className="link">Contact</span> <ContactIcons />
+          <span
+            className="link"
+            onClick={() => setIsContactOpen(!isContactOpen)}
+          >
+            Contact
+          </span>{" "}
+          {isContactOpen && <ContactIcons />}
         </div>
       </div>
     </>
