@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// contact icons component
+import ContactIcons from "./ContactIcons";
+
 // Data
-import { links, social } from "../../data";
+import { links } from "../../data";
 
 // Styles
 import "./navigation.css";
@@ -21,7 +24,9 @@ const Navigation = ({ setIsNavOpen }) => {
             </div>
           );
         })}
-        <div className="link">Contact</div>
+        <div className="link">
+          Contact <ContactIcons />
+        </div>
       </div>
     </>
   );
