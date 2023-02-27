@@ -1,0 +1,23 @@
+.resp-nav-container {
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+  row-gap: 20px;
+  position: absolute;
+  background-color: #0f1624;
+  z-index: 999;
+}
+
+.resp-nav-container .link {
+  opacity: 0.75;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.resp-nav-container .link:hover {
+  opacity: 1;
+  padding-left: 10px;
+}
