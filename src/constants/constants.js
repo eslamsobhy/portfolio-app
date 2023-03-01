@@ -1,3 +1,8 @@
+import { GiBriefcase } from "react-icons/gi";
+import { BsFront, BsBack } from "react-icons/bs";
+import { GrCertificate } from "react-icons/gr";
+import { MdCardMembership } from "react-icons/md";
+
 export const projects = [
   {
     id: 0,
@@ -42,13 +47,34 @@ export const projects = [
 ];
 
 export const timelineData = [
-  { year: 2017, text: "Started my journey as a computer science student." },
-  { year: 2018, text: "Took a deep dive into front-end web development." },
-  { year: 2020, text: "Took a deep dive into Back-End web development." },
+  {
+    year: 2017,
+    text: "Started my journey as a computer science student.",
+    icon: <GiBriefcase />,
+  },
+  {
+    year: 2018,
+    text: "Took a deep dive into front-end web development.",
+    icon: <BsFront />,
+  },
+  {
+    year: 2020,
+    text: "Took a deep dive into Back-End web development.",
+    icon: <BsBack />,
+  },
   {
     year: 2021,
     text: "Got a bachelor's degree in computer science from Ain Shams University.",
+    icon: <GrCertificate />,
   },
-  { year: 2023, text: "Became a full-stack web development trainee at ITI." },
-  { year: 2023, text: "Became a software engineer trainee at ALX Africa." },
+  {
+    year: 2023,
+    text: "Became a full-stack web development trainee at ITI.",
+    icon: <MdCardMembership />,
+  },
+  {
+    year: 2023,
+    text: "Became a software engineer trainee at ALX Africa.",
+    icon: <MdCardMembership />,
+  },
 ];

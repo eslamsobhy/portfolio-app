@@ -41,6 +41,7 @@ const About = () => {
             return (
               <div className={`timeline ${position}`} key={timelineIndex}>
                 <div className="timeline-year">{timeline.year}</div>
+                <div className="timeline-icon">{timeline.icon}</div>
                 <div className="timeline-text">{timeline.text}</div>
               </div>
             );
