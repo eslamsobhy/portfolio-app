@@ -31,7 +31,7 @@ const Header = ({ isResNavOpen, setIsResNavOpen }) => {
   }, []);
 
   return (
-    <div className="navbar">
+    <div className="navbar sticky">
       <nav className="container section">
         <div className="nav-center">
           <a
