@@ -1,6 +1,6 @@
 import { GiBriefcase } from "react-icons/gi";
 import { BsFront, BsBack } from "react-icons/bs";
-import { GrCertificate } from "react-icons/gr";
+import { TbCertificate } from "react-icons/tb";
 import { MdCardMembership } from "react-icons/md";
 
 export const projects = [
@@ -65,7 +65,7 @@ export const timelineData = [
   {
     year: 2021,
     text: "Got a bachelor's degree in computer science from Ain Shams University.",
-    icon: <GrCertificate />,
+    icon: <TbCertificate />,
   },
   {
     year: 2023,

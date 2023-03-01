@@ -14,7 +14,7 @@
   margin: 80px auto;
   position: relative;
   width: 60vw;
-  height: 150px;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -42,6 +42,13 @@
   font-size: 2rem;
   font-weight: bold;
   opacity: 0.9;
+}
+
+.timeline-icon {
+  margin-top: 1rem;
+  font-size: 50px;
+  color: white;
+  opacity: 0.8;
 }
 
 .timeline-text {
@@ -97,6 +104,10 @@
 
   .timeline-year {
     font-size: 1.5rem;
+  }
+
+  .timeline-icon {
+    font-size: 35px;
   }
 
   .prev {
