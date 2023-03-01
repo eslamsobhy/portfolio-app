@@ -38,9 +38,7 @@ const Header = ({ isResNavOpen, setIsResNavOpen }) => {
             style={{ display: "flex", alignItems: "center", color: "white" }}
             className="nav-logo"
           >
-            <Link>
-              <DiCssdeck size="3rem" />
-            </Link>{" "}
+            <DiCssdeck size="3rem" />
             <span>Portfolio</span>
           </a>
         </div>
