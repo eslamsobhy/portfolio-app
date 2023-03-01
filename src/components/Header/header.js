@@ -26,7 +26,7 @@ const Header = ({ isResNavOpen, setIsResNavOpen }) => {
     setIsGlow(true);
     const timeOut = setTimeout(() => {
       setIsGlow(false);
-    }, 5000);
+    }, 3000);
     return () => clearTimeout(timeOut);
   }, []);
 
