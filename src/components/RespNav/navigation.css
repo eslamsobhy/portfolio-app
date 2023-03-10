@@ -1,3 +1,11 @@
+.con {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 9999;
+}
+
 .resp-nav-container {
   width: 100%;
   height: calc(100vh - 50px);
@@ -9,7 +17,7 @@
   position: absolute;
   background-color: #0f1624;
   z-index: 9;
-  margin-top: 50px;
+  margin-top: 48px;
 }
 
 .resp-nav-container .link {
