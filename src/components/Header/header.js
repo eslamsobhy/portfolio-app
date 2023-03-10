@@ -13,6 +13,18 @@ import { FaBars } from "react-icons/fa";
 const Header = ({ isResNavOpen, setIsResNavOpen }) => {
   const [isGlow, setIsGlow] = useState(false);
 
+  const toggleNav = () => {
+    if (isResNavOpen) {
+      setIsResNavOpen(false);
+      document.body.style.height = "auto";
+      document.body.style.overflow = "visible";
+    } else {
+      setIsResNavOpen(true);
+      document.body.style.height = "100%";
+      document.body.style.overflow = "hidden";
+    }
+  };
+
   const hideNavIcon = () => {
     setIsResNavOpen(false);
   };
@@ -62,10 +74,7 @@ const Header = ({ isResNavOpen, setIsResNavOpen }) => {
             );
           })}
         </div>
-        <button
-          className="nav-toggle"
-          onClick={() => setIsResNavOpen(!isResNavOpen)}
-        >
+        <button className="nav-toggle" onClick={toggleNav}>
           <FaBars className={isGlow ? "glow" : ""} />
         </button>
       </nav>

@@ -13,6 +13,12 @@ import "./navigation.css";
 const Navigation = ({ setIsResNavOpen }) => {
   const [isContactOpen, setIsContactOpen] = useState(false);
 
+  const closeNav = () => {
+    setIsResNavOpen(false);
+    document.body.style.overflow = "visible";
+    document.body.style.height = "auto";
+  };
+
   return (
     <>
       <div className="resp-nav-container">
@@ -20,7 +26,7 @@ const Navigation = ({ setIsResNavOpen }) => {
           const { id, url, text } = link;
           return (
             <div className="link" key={id}>
-              <Link to={url} onClick={() => setIsResNavOpen(false)}>
+              <Link to={url} onClick={closeNav}>
                 {text}
               </Link>
             </div>
