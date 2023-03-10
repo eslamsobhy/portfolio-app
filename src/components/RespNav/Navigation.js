@@ -10,7 +10,7 @@ import { links } from "../../data";
 // Styles
 import "./navigation.css";
 
-const Navigation = ({ setIsNavOpen }) => {
+const Navigation = ({ setIsResNavOpen }) => {
   const [isContactOpen, setIsContactOpen] = useState(false);
 
   return (
@@ -20,7 +20,7 @@ const Navigation = ({ setIsNavOpen }) => {
           const { id, url, text } = link;
           return (
             <div className="link" key={id}>
-              <Link to={url} onClick={() => setIsNavOpen(false)}>
+              <Link to={url} onClick={() => setIsResNavOpen(false)}>
                 {text}
               </Link>
             </div>
