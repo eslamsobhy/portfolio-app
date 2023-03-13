@@ -118,3 +118,13 @@
     right: -1rem;
   }
 }
+
+@media (max-width: 450px) {
+  .timeline-center {
+    width: 73vw;
+  }
+
+  .timeline-text {
+    width: 70%;
+  }
+}
