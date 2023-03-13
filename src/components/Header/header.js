@@ -51,7 +51,7 @@ const Header = ({ isResNavOpen, setIsResNavOpen }) => {
             className="nav-logo"
           >
             <DiCssdeck size="3rem" />
-            <span>Portfolio</span>
+            <span>Sobhii</span>
           </a>
         </div>
         <div className="nav-links">
@@ -74,7 +74,10 @@ const Header = ({ isResNavOpen, setIsResNavOpen }) => {
             );
           })}
         </div>
-        <button className="nav-toggle" onClick={toggleNav}>
+        <button
+          className={isResNavOpen ? "nav-toggle open" : "nav-toggle close"}
+          onClick={toggleNav}
+        >
           <FaBars className={isGlow ? "glow" : ""} />
         </button>
       </nav>

@@ -50,7 +50,7 @@ const Projects = () => {
         </article>
         <div className="sec-btn">
           <button className="main-btn">
-            <Link to="/">Back To home</Link>
+            <Link to="/">Back To Home</Link>
           </button>
         </div>
       </div>
