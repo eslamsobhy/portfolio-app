@@ -27,6 +27,17 @@ const Header = ({ isResNavOpen, setIsResNavOpen }) => {
 
   const hideNavIcon = () => {
     setIsResNavOpen(false);
+    /*
+      when changing from the portrait mode to landscape mode or vice versa,
+      these styles still applied:
+        document.body.style.height = "100%";
+        document.body.style.overflow = "hidden";
+      and the responsive nav disappears.
+      So we need to fix this bug by returning the styles back to the default
+      whenever the size changes
+    */
+    document.body.style.height = "auto";
+    document.body.style.overflow = "visible";
   };
 
   useEffect(() => {
