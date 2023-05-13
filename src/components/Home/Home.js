@@ -15,7 +15,7 @@ const Home = () => {
         </article>
         <button className="main-btn home-btn">
           <a
-            href="https://drive.google.com/file/d/1BSzyaQM-i4lCbf5Ei5VXmfGdbKyKZDwW/view?usp=sharing"
+            href="https://drive.google.com/file/d/1HsgN5hKILl9bAtyIgkoiH5wEidoPdQUb/view?usp=sharing"
             target="_blank"
           >
             My Resumè

@@ -6,6 +6,16 @@ import { MdCardMembership } from "react-icons/md";
 export const projects = [
   {
     id: 0,
+    title: "Tracking Service App",
+    description:
+      "Single page web application that allows the user to track the shipment to his order using the shipment number provided while ordering.",
+    image: "/images/7.jpg",
+    tags: ["Javascript", "HTML", "CSS", "ReactJs"],
+    source: "https://github.com/eslamsobhy/tracking-service-app",
+    visit: "https://tracking-service-app.vercel.app/",
+  },
+  {
+    id: 1,
     title: "Cocktails Web App",
     description:
       "Single page web application that displays drinks and cocktails from around the world, inspired from the cocktails db.",
@@ -15,7 +25,7 @@ export const projects = [
     visit: "https://cocktails-app-vert.vercel.app/",
   },
   {
-    id: 1,
+    id: 2,
     title: "Shopping Cart App",
     description:
       "Single page web application that allows us to display, delete, increase, and decrease chosen cart items from an external API",
@@ -25,7 +35,7 @@ export const projects = [
     visit: "https://cart-app-rho.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Omnifood",
     description:
       " Fully responsive web site for a premium food delivery company that is responsible for providing a healthy and affordable meals in currently four cities.",
@@ -35,7 +45,7 @@ export const projects = [
     visit: "https://omnifood-xi.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Leon",
     description:
       "Fully responsive web site template for Leon agency, which is responsible for Graphic/Web design, UI/UX, and Web development.",
